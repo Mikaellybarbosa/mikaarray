@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3º Map</title>
+</head>
+
+<body>
+
+  <h2>JavaScript Arrays</h2>
+
+  <p>Calcule uma nova lista com o nome completo de cada pessoa na lista antiga:</p>
+
+  <p id="lista"></p>
+
+  <script>
+    const persons = [
+      { firstname: "Malcom", lastname: "Reynolds" },
+      { firstname: "Kaylee", lastname: "Frye" },
+      { firstname: "Jayne", lastname: "Cobb" }
+    ];
+
+    document.getElementById("lista").innerHTML = persons.map(getFullName);
+
+    function getFullName(item) {
+      return [item.firstname, item.lastname].join(" ");
+    }
+  </script>
+
+</body>
+
+</html>

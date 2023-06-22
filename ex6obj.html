@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6º Objetcs</title>
+</head>
+
+<body>
+
+  <h2>JavaScript Objects</h2>
+
+  <p>Existem duas maneiras diferentes de acessar uma propriedade de objeto.</p>
+
+  <p>Você pode usar person.property ou person["property"].</p>
+
+  <p id="text"></p>
+
+  <script>
+    // Crie um objeto:
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      id: 5566
+    };
+
+    // Exiba alguns dados do objeto:
+    document.getElementById("text").innerHTML =
+      person["firstName"] + " " + person["lastName"];
+  </script>
+
+</body>
+
+</html>

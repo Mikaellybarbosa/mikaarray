@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1º ForEach</title>
+</head>
+
+<body>
+
+  <h1>JavaScript Arrays</h1>
+
+  <h2>O método forEach()</h2>
+
+  <p>forEach() chama uma função para cada elemento em uma lista:
+  </p>
+
+  <p id="lista"></p>
+
+  <script>
+    let text = "";
+    const fruits = ["apple", "orange", "cherry"];
+    fruits.forEach(myFunction);
+
+    document.getElementById("lista").innerHTML = text;
+
+    function myFunction(item, index) {
+      text += index + ": " + item + "<br>";
+    }
+  </script>
+</body>
+
+</html>

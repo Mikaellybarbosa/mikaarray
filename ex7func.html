@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7º Function</title>
+</head>
+
+<body>
+  <h1>JavaScript Functions</h1>
+
+  <p>Fora myFunction() carName é indefinido.</p>
+
+  <p id="fora"></p>
+  <p id="dentro"></p>
+
+  <script>
+    let text = "Outside: " + typeof carName;
+    document.getElementById("fora").innerHTML = text;
+
+    function myFunction() {
+      let carName = "Volvo";
+      let text = "Inside: " + typeof carName + " " + carName;
+      document.getElementById("dentro").innerHTML = text;
+    }
+
+    myFunction();
+  </script>
+</body>
+
+</html>

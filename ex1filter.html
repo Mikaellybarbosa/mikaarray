@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1º Filter</title>
+</head>
+
+<body>
+
+  <h1>JavaScript Arrays</h1>
+
+  <h2>O método filter()</h2>
+
+  <p>Obtenha cada elemento da lista que tenha um valor de 18 ou mais:</p>
+
+  <p id="num"></p>
+
+  <script>
+    const ages = [32, 33, 16, 40];
+
+    document.getElementById("num").innerHTML = ages.filter(checkAdult);
+
+    function checkAdult(age) {
+      return age >= 18;
+    }
+  </script>
+
+</body>
+
+</html>

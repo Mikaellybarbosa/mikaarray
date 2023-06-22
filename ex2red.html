@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2º Reduce</title>
+</head>
+
+<body>
+
+  <h2>JavaScript Arrays</h2>
+
+  <p>Calcule a soma dos números arredondados em uma lista.</p>
+
+  <p id="num"></p>
+
+  <script>
+    const numbers = [15.5, 2.3, 1.1, 4.7];
+
+    document.getElementById("num").innerHTML = numbers.reduce(getSum, 0);
+
+    function getSum(total, num) {
+      return total + Math.round(num);
+    }
+  </script>
+</body>
+
+</html>
